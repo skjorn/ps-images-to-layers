@@ -1,0 +1,28 @@
+﻿dialog {
+	text: "Images To Layers",
+	orientation: "column",
+	alignChildren: "fill",
+	lblDest: StaticText {
+		alignment: "left",
+		text: "Select folder:"
+	},
+	funcArea: Group {
+		orientation: "row",
+		alignChildren: "top",
+		content: Panel {
+			orientation: "column",
+			alignChildren: "left",
+			grpDest: Group {
+				orientation: "row",
+				alignChildren: "left",
+				txtDest: EditText {preferredSize: [310, 20], properties: {readonly: true}},
+				btnDest: Button {text: "Browse..."}
+			}
+		},
+		buttons: Group {
+			orientation: "column",
+			btnRun: Button {text: "Run"},
+			btnCancel: Button {text: "Cancel"}
+		}
+	}
+}
